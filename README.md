@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="400"  src="https://github.com/YuZhang-loki/SingleViral/blob/main/SingleViral_logo.png">
+  <img width="800"  src="https://github.com/YuZhang-loki/SingleViral/blob/main/SingleViral_logo.png">
 </p>
 
 # SingleViral
@@ -7,8 +7,6 @@
 
 An integrated R toolkit for viral infection quantification, classification,
 and host–virus interaction analysis at the single-cell level.
-
----
 
 ## 🧬 Overview
 
@@ -33,7 +31,9 @@ infection-driven functional and communication changes across single cells.
 - Compare Cell–Cell Communication (`CellChatCompare`)
 - Run TraceVirus Pipeline (`RunTraceVirus`)
 
----
+### Usage
+
+A detailed usage workflow is provided in the scripts folder.
 
 ## 🚀 Installation
 
@@ -42,3 +42,22 @@ You can install the latest development version directly from GitHub:
 ```r
 install.packages("devtools")
 devtools::install_github("YuZhang/SingleViral")
+
+### Installation of other dependencies
+
+- Install [CellChat](https://github.com/sqjin/CellChat) using `devtools::install_github("jinworks/CellChat")` if you encounter any issue.
+- Install [ComplexHeatmap](https://github.com/jokergoo/ComplexHeatmap) using `devtools::install_github("jokergoo/ComplexHeatmap")` if you encounter any issue.
+
+# TraceVirus
+TraceVirus is an R-based computational framework built upon STAR and RSEM, designed to detect viral and host sequences from raw RNA-sequencing (scRNA-seq) data and to automate downstream analyses. The source code is available in the inst directory.
+
+Before running TraceVirus, several dependencies must be installed :
+1 . The first step is to install R software. Once this is done, several Bioconductor packages have to be installed too. To do so start a R session and type :
+```r
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(c("AnnotationDbi","GO.db", "preprocessCore", "impute","WGCNA"))
+
+2.Spliced Transcript Alignment to A Reference (STAR) has to be installed. The full installation process is described on the STAR Github(https://github.com/alexdobin/STAR).
+
+3.RSEM is also required. The installation is described here(https://github.com/deweylab/RSEM).
