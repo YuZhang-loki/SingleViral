@@ -42,6 +42,7 @@ You can install the latest development version directly from GitHub:
 ```r
 install.packages("devtools")
 devtools::install_github("YuZhang/SingleViral")
+```
 
 ### Installation of other dependencies
 
@@ -53,10 +54,12 @@ TraceVirus is an R-based computational framework built upon STAR and RSEM, desig
 
 Before running TraceVirus, several dependencies must be installed :
 1 . The first step is to install R software. Once this is done, several Bioconductor packages have to be installed too. To do so start a R session and type :
+
 ```r
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 BiocManager::install(c("AnnotationDbi","GO.db", "preprocessCore", "impute","WGCNA"))
+```
 
 2.Spliced Transcript Alignment to A Reference (STAR) has to be installed. The full installation process is described on the STAR Github(https://github.com/alexdobin/STAR).
 
