@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="800"  src="https://github.com/YuZhang-loki/SingleViral/blob/main/SingleViral_logo.png">
+  <img width="400"  src="https://github.com/YuZhang-loki/SingleViral/blob/main/SingleViral_logo.png">
 </p>
 
 # SingleViral
