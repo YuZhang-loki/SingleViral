@@ -1,7 +1,5 @@
-# SingleViral
-SingleViral R package: A comprehensive analysis tool for virus-infected single-cell transcriptomes
 <p align="center">
-  <img width="200"  src="https://github.com/YuZhang-loki/SingleViral/main/SingleViral_logo.png">
+  <img width="200"  src="https://github.com/YuZhang-loki/SingleViral/SingleViral_logo.png">
 </p>
 
 # SingleViral
@@ -19,7 +17,7 @@ define infection levels, identify infection-related genes, and explore
 infection-driven functional and communication changes across single cells.
 
 <p align="center">
-  <img width="200"  src="https://github.com/YuZhang-loki/SingleViral/main/SingleViral_overview.png">
+  <img width="200"  src="https://github.com/YuZhang-loki/SingleViral/SingleViral_overview.png">
 </p>
 
 ### Key features
