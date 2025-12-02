@@ -21,7 +21,7 @@ out <- TargetInfectionLevel(
   score_col = "viral_load",
   n_levels  = 5,
   method    = "quantile",
-  labels    = c("Uninfected", "Low infection","Mederate infection","Mederate to high", "High infection")  # ⬅️ 自定义标签
+  labels    = c("Uninfected", "Low infection","Mederate infection","Mederate to high", "High infection")
 )
 data <- out$object
 table(data$infection_label)
@@ -98,11 +98,11 @@ new_colors <- c(
 
 res <- CellVariableInfection(
   obj       = data,
-  group_col = "manual_label",   # 或 "timepoint"
+  group_col = "manual_label",   
   score_col = "viral_load",
   level_col = "infection_level",
   zero_tol  = 0,
-  palette   = new_colors,             # 可传入自定义颜色向量
+  palette   = new_colors,             
   lvl_colors= c("0"="#7FB3D5","1"="#5DADE2","2"="turquoise","3"="#fdb462","4"="#D74C4C"),
   save_dir  = "infection_summary_plots"
 )
@@ -205,7 +205,7 @@ res_cc <- CellChatCompare(
   timepoints   = c("24hpi","48hpi","72hpi","96hpi"),
   group_col    = "manual_label",
   group_include = c("CD4+Tcells","CD8+Tcells","DPTcells",
-                    "DNTcells","Th1","Th2","Tfh","NK_cell","B_cell"),  # 可选
+                    "DNTcells","Th1","Th2","Tfh","NK_cell","B_cell"),  
   assay        = "RNA",
   slot         = "data",
   organism     = "human",
