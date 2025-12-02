@@ -106,7 +106,7 @@ ViralLoadScoring <- function(obj, viral_genes, neg_cells = NULL,
   if (!is.null(neg_cells)) {
     neg_cells_used <- intersect(colnames(Z), neg_cells)
     if (length(neg_cells_used) > 0) {
-      Z[, neg_cells_used] <- 0  # 这样两种得分都会为 0
+      Z[, neg_cells_used] <- 0  
     }
   }
   
