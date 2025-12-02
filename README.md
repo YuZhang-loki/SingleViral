@@ -41,7 +41,7 @@ You can install the latest development version directly from GitHub:
 
 ```r
 install.packages("devtools")
-devtools::install_github("YuZhang/SingleViral")
+devtools::install_github("YuZhang-loki/SingleViral")
 ```
 
 ### Installation of other dependencies
