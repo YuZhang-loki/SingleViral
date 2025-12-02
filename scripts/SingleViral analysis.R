@@ -21,8 +21,7 @@ out <- TargetInfectionLevel(
   score_col = "viral_load",
   n_levels  = 5,
   method    = "quantile",
-  labels    = c("Uninfected", "Low infection","Mederate infection","Mederate to high", "High infection")
-)
+  labels    = c("Uninfected", "Low infection","Mederate infection","Mederate to high", "High infection") 
 data <- out$object
 table(data$infection_label)
 table(data$infection_level)
@@ -98,11 +97,11 @@ new_colors <- c(
 
 res <- CellVariableInfection(
   obj       = data,
-  group_col = "manual_label",   
+  group_col = "manual_label",  
   score_col = "viral_load",
   level_col = "infection_level",
   zero_tol  = 0,
-  palette   = new_colors,             
+  palette   = new_colors,            
   lvl_colors= c("0"="#7FB3D5","1"="#5DADE2","2"="turquoise","3"="#fdb462","4"="#D74C4C"),
   save_dir  = "infection_summary_plots"
 )
@@ -241,6 +240,10 @@ res_ci <- CellChatByCellInfection(
 res_ci$outdir
 
 ##10.RunTraceVirus
+#Place the data to be analyzed into the working directory.
+#For single-end sequencing data, rename the sample as ***_R1.fastq.gz (e.g., 101_R1.fastq.gz).
+#For paired-end sequencing data, rename the files as ***_R1.fastq.gz and ***_R2.fastq.gz (e.g., 101_R1.fastq.gz and 101_R2.fastq.gz).
+#After renaming, run the following function.
 
 RunTraceVirus(
   mode             = "virus",#or"host"
