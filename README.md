@@ -33,7 +33,7 @@ infection-driven functional and communication changes across single cells.
 
 ### Usage
 
-A detailed usage workflow is provided in the scripts folder.
+A detailed usage workflow is provided in the usage folder.
 
 ## 🚀 Installation
 
