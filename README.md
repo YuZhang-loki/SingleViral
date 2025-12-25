@@ -19,7 +19,7 @@ infection-driven functional and communication changes across single cells.
 </p>
 
 ### Key features
-
+- preprocessing for multiple single-cell RNA-seq samples (`preanalysis`)
 - Viral load quantification (`ViralloadScoring`)
 - Viral gene dynamics analysis (`VirusGeneDynamic`)
 - Infection-level classification (`TargetInfectionLevel`)
@@ -64,3 +64,8 @@ BiocManager::install(c("AnnotationDbi","GO.db", "preprocessCore", "impute","WGCN
 2.Spliced Transcript Alignment to A Reference (STAR) has to be installed. The full installation process is described on the STAR Github(https://github.com/alexdobin/STAR).
 
 3.RSEM is also required. The installation is described here(https://github.com/deweylab/RSEM).
+
+4.Place the data to be analyzed into the working directory.
+For single-end sequencing data, rename the sample as ***_R1.fastq.gz (e.g., 101_R1.fastq.gz).
+For paired-end sequencing data, rename the files as ***_R1.fastq.gz and ***_R2.fastq.gz (e.g., 101_R1.fastq.gz and 101_R2.fastq.gz).
+After renaming, run the following function.
