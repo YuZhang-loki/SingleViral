@@ -3,7 +3,7 @@
 </p>
 
 # SingleViral
-## Version 0.1.0
+## Version 1.0.0
 
 An integrated R toolkit for viral infection quantification, classification,
 and host–virus interaction analysis at the single-cell level.
