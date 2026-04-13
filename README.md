@@ -30,7 +30,8 @@ infection-driven functional and communication changes across single cells.
 - CellChat analysis by infection (`CellChatByCellInfection`)
 - Compare Cell–Cell Communication (`CellChatCompare`)
 - Run TraceVirus Pipeline (`RunTraceVirus`)
-
+- Compute correlation between gene expression and viral load (`GeneViralLoadCorrelation`)
+- Infection-level progression clustering for viral and host genes (`InfectionSeries`)
 ### Usage
 
 A detailed usage workflow is provided in the usage folder.
