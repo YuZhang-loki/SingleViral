@@ -22,16 +22,18 @@ infection-driven functional and communication changes across single cells.
 - preprocessing for multiple single-cell RNA-seq samples (`preanalysis`)
 - Viral load quantification (`ViralloadScoring`)
 - Viral gene dynamics analysis (`VirusGeneDynamic`)
+- Identification and visualization of dominant viral genes (`PlotViralTopGene`)
 - Infection-level classification (`TargetInfectionLevel`)
 - DEG analysis and volcano plotting (`InfectionVariableGenes`)
 - GSEA-based dynamic analysis (`InfectionDynamic`)
 - Group-wise infection summary (`CellVariableInfection`)
+- Patient-paired pseudobulk analysis (`InfectionPseudobulk`)
+- Compute correlation between gene expression and viral load (`GeneViralLoadCorrelation`)
+- Infection-level progression clustering for viral and host genes (`InfectionSeries`)
 - Cell-cycle scoring by infection (`CellCycleByInfection`)
 - CellChat analysis by infection (`CellChatByCellInfection`)
 - Compare Cell–Cell Communication (`CellChatCompare`)
 - Run TraceVirus Pipeline (`RunTraceVirus`)
-- Compute correlation between gene expression and viral load (`GeneViralLoadCorrelation`)
-- Infection-level progression clustering for viral and host genes (`InfectionSeries`)
 ### Usage
 
 A detailed usage workflow is provided in the usage folder.
