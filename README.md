@@ -51,24 +51,6 @@ devtools::install_github("YuZhang-loki/SingleViral")
 
 - Install [CellChat](https://github.com/sqjin/CellChat) using `devtools::install_github("jinworks/CellChat")` if you encounter any issue.
 - Install [ComplexHeatmap](https://github.com/jokergoo/ComplexHeatmap) using `devtools::install_github("jokergoo/ComplexHeatmap")` if you encounter any issue.
-
-# TraceVirus
-TraceVirus is an R-based computational framework built upon STAR and RSEM, designed to detect viral and host sequences from raw RNA-sequencing (scRNA-seq) data and to automate downstream analyses. The source code is available in the inst directory.
-
-Before running TraceVirus, several dependencies must be installed :
-1 . The first step is to install R software. Once this is done, several Bioconductor packages have to be installed too. To do so start a R session and type :
-
-```r
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install(c("AnnotationDbi","GO.db", "preprocessCore", "impute","WGCNA"))
-```
-
-2.Spliced Transcript Alignment to A Reference (STAR) has to be installed. The full installation process is described on the STAR Github(https://github.com/alexdobin/STAR).
-
-3.RSEM is also required. The installation is described here(https://github.com/deweylab/RSEM).
-
-4.Place the data to be analyzed into the working directory.
 For single-end sequencing data, rename the sample as ***_R1.fastq.gz (e.g., 101_R1.fastq.gz).
 For paired-end sequencing data, rename the files as ***_R1.fastq.gz and ***_R2.fastq.gz (e.g., 101_R1.fastq.gz and 101_R2.fastq.gz).
 After renaming, run the following function.
