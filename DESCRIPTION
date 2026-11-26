@@ -1,0 +1,38 @@
+Package: SingleViral
+Title: What the Package Does (One Line, Title Case)
+Version: 1.0.0
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: 
+    clusterProfiler,
+    dplyr,
+    ggplot2,
+    future,
+    ggrepel,
+    Matrix,
+    matrixStats,
+    msigdbr,
+    readr,
+    rlang,
+    scales,
+    Seurat,
+    tibble,
+    tidyr,
+    pheatmap,
+    patchwork,
+    DropletUtils,
+    DoubletFinder,
+    ggnewscale,
+    methods
+Suggests: 
+    CellChat,
+    ComplexHeatmap,
+    Biobase,
+    Mfuzz,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
